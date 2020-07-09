@@ -1,0 +1,92 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+#wrapper {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+#musicPlayer {
+	width: 75%;
+	padding: 3%;
+	margin-left: 8%;
+	margin-top: 8%;
+}
+
+#albumArt {
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    box-shadow: 6px 6px 10px rgba(111, 114, 114, 0.952);
+    background-image: url(music-note.png);
+    background-size: cover;
+    margin-right: 20px;
+
+}
+
+#currentlyPlaying {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 5px;
+	vertical-align: top;
+}
+
+#songName {
+	font-size: 50px;
+}
+
+#songArtist {
+	font-size: 40px;
+}
+
+#songAlbum {
+	font-size: 40px;
+}
+
+#controlsContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	bottom: 0;
+	width: 75%;
+}
+
+#controlsContainer img {
+	width: 10%;
+	justify-content: center;
+}
+
+#searchContainer {
+	width: 30%;
+	padding: 2%;
+	min-height: 100vh;
+	background: #ebebeb;
+}
+
+#searchResults {
+	display:grid;
+	margin-top: 20px;
+}
+
+#songInfo {
+	float: right;
+}
+
+img {
+    width: 50px;
+}
+
+/*#songName,
+#artistName,
+#albumTitle {
+    display: inline-block;
+}*/
