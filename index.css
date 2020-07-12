@@ -8,6 +8,20 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+#submitBtn {
+	cursor: pointer;
+	font-family: 'Work Sans', sans-serif;
+	background-color: rgb(109, 108, 108);
+	color: white;
+	margin-top: 5px;
+	padding: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	box-shadow: none;;
+
+}
+
 
 #wrapper {
 	display: flex;
@@ -38,6 +52,11 @@ body {
 	width: 50%;
 	margin-bottom: 5px;
 	vertical-align: top;
+	font-size: 35px;
+}
+
+#currentlyPlaying .songName{
+	font-size: 45px;
 }
 
 #songName {
@@ -63,6 +82,12 @@ body {
 #controlsContainer img {
 	width: 10%;
 	justify-content: center;
+	cursor: pointer;
+
+}
+
+#controlsContainer img:hover{
+	filter:drop-shadow(3px 3px 1px #e0dcdc);
 }
 
 #searchContainer {
@@ -85,8 +110,61 @@ img {
     width: 50px;
 }
 
-/*#songName,
-#artistName,
-#albumTitle {
-    display: inline-block;
-}*/
+.preview {
+	cursor: pointer;
+	background-color: rgb(109, 108, 108);
+	color: white;
+	margin-top: 5px;
+	padding: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	float: right;
+}
+
+.preview:hover {
+	background-color: rgb(71, 70, 70);
+}
+
+
+@media screen and (max-width: 1500px) {
+	.preview {
+		float:none
+	}
+
+	#searchContainer {
+		width: 40%;
+	}
+}
+
+
+@media screen and (max-width: 1250px) {
+	#searchContainer {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 1076px) {
+	#wrapper{
+		flex-direction: column;
+	}
+
+	#searchContainer {
+		min-height: 0;
+		width: 100%;
+
+	}
+
+	.indivResult {
+		padding: 20px 0px;
+		border-bottom: none;
+	}
+
+	#currentlyPlaying {
+		width: 100%;
+	}
+
+	#controlsContainer img {
+		width: 20%;
+
+}
